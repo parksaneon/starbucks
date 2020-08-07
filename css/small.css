@@ -1,0 +1,239 @@
+@media screen and (max-width:640px){
+  /* 모바일 보이기 */
+  .mobile__only{
+    display: block !important;
+  }
+  /* desktop 내용 숨기기 */
+  .desktop__only{
+    display: none !important;
+  }
+  /* 헤더 영역 */
+  .header{
+    width: 100%;
+  }
+  .header__wrap{
+    max-width: 640px;
+    margin: 0;
+    padding: 10px 20px;
+  }
+  .logo{
+    width: 45px;
+  }
+  form{
+    padding: 30px 50px;
+  }
+  input[type="search"]{
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+  }
+  .search__btn{
+    position: static;
+    width: 25%;
+    height: 40px;
+    background-image: none;
+    background-color: #666;
+    border: 0px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .member__link{
+    margin-top: 10px;
+  }
+  .member__link li{
+    margin: 0 30px 0 0;
+  }
+  .member__link li{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 30px;
+    text-indent: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .member__link li:first-child{
+    background-image: url(./img/icon_user_m.png);
+    
+  }
+  .member__link li:nth-child(2){
+    display: none;
+  }
+  .member__link li:nth-child(3){
+    background-image: url(./img/icon_spot_m.png);
+  }
+  .member__link li:last-child{
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .member__link button.show__nav {
+    border-width: 0;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 30px;
+    background-image: url(./img/btn_berger_m.png);
+  }
+  .member__link li:nth-child(4){
+    display: none;
+  }
+  .member__link li:not(:first-child)::before{
+    display: none;
+  }
+  nav{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    transform: translateX(120%);
+    background-color: #111;
+    transition: transform 0.4s;
+    z-index: 9999;
+  }
+  nav.show{
+    transform: translateX(20px);
+  }
+  header.show__nav::before{
+    content:'';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  .list__bg{
+    position: static;
+    opacity: 1;
+    max-height: 100%;
+    background-color: transparent;
+    overflow: auto;
+  }
+  .main__menu{
+    display: block;
+  }
+  .main__menu li{
+    display: block;
+    max-height : 70px;
+    padding: 0 0 0 20px;
+    transition: max-height 1s ease;
+    overflow: hidden;
+  }
+  .main__menu > li.on{
+    max-height: 1000px;
+  }
+  .main__menu li .menu__sub{
+    display: block;
+  }
+  .main__menu a{
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  .main__menu> li > a {
+    position: relative;
+    padding:25px 0 25px 10px;
+    font-size: 1.8rem;
+  }
+  .main__menu > li > a::after{
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 20px;
+    background: url(./img/mob_gnb_arrow_down_w.png) center no-repeat;
+  }
+  .main__menu > li.on > a::after{
+    background: url(./img/mob_gnb_arrow_up_w.png) center no-repeat;
+  }
+  .main__menu li .menu__sub > li{
+    padding: 0;
+  }
+  .menu__sub a{
+    border-bottom-width: 0;
+    margin:0;
+    padding:20px 0 20px 10px;
+  }
+  .menu__sub__list{
+    display: none;
+  }
+  .close__nav{
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 10px;
+    border-width: 0;
+    background: url(./img/btn_gnb_close.png) center no-repeat;
+    transition: transform 1s;
+  }
+  .close__nav:hover{
+    transform: rotate(180deg);
+  }
+  /* 메인 영역 */
+  .main{
+    margin-top: 67px;
+  }
+  /* 시즌 음료 영역 */
+  .season__tea{
+    padding: 0 0 20px 20px;
+  }
+  .season__tea .section__wrap{
+    text-align: center;
+    height: auto;
+  }
+  .section__wrap p, .section__wrap div{
+    text-align: left;
+  }
+  .season__tea div[class^="bev"]{
+    position: relative;
+    display: inline-block;
+  }
+  .season__tea .bev1{
+    left: 35%;
+    bottom: 0;
+    width: 86%;
+  }
+  .season__tea .bev1 > img{
+    width: 50%;
+    left: -40%;
+    bottom: 80%;
+  }
+  .season__tea .bev2{
+    left: 10%;
+    bottom: 0;
+    margin-top:-200px;
+    width: 95%;
+    z-index: 2;
+  }
+  .season__tea .bev2 > img{
+    width: 40%;
+    left: 40%;
+    top: 50%;
+  }
+  .season__tea .bev3{
+    left: 40%;
+    bottom: 0;
+    margin-top:-100px;
+    width: 90%;
+    animation: show 0.5s 0.8s forwards;
+  }
+  .season__tea .bev3 > img{
+    width: 50%;
+    bottom: 140px;
+    left: -35%;
+  }
+  .season__tea .btn{
+    color: #fff;
+    border: 2px solid #fff;
+    transition: background 0.5s;
+  }
+} 

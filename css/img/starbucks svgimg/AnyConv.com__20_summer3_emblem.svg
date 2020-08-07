@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="255" height="269">
+<path style="fill:#ffffff; stroke:none;" d="M0 0L0 66L126 66L162 66C166.621 66 173.55 64.725 177.852 66.6034C182.414 68.5954 181 76.0106 181 80L181 115C181 118.694 182.272 125.521 179.397 128.397C176.663 131.131 170.503 130 167 130L134 130L0 130L0 203L255 203L255 0L0 0z"/>
+<path style="fill:#ffd7b3; stroke:none;" d="M0 66L0 67L180 67L162 66L126 66L0 66z"/>
+<path style="fill:#fe9b40; stroke:none;" d="M0 67L0 129L180 129L180 67L0 67z"/>
+<path style="fill:#ffe7d2; stroke:none;" d="M180 67L180 129L181 129L181 87L180 67z"/>
+<path style="fill:#ffdebf; stroke:none;" d="M0 129L0 130L180 130L162 129L126 129L0 129z"/>
+<path style="fill:#00a252; stroke:none;" d="M0 203L0 269L255 269L255 203L0 203z"/>
+</svg>
